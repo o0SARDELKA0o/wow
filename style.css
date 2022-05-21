@@ -1,0 +1,93 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.page{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.page1{
+    background-color: rgb(70, 37, 94);
+}
+
+.page2{
+    background-color: rgb(255, 229, 83);
+}
+
+.page3{
+    background-color: rgb(255, 253, 231);    
+}
+
+#arrowTop {
+    height: 25px;
+    width: 30px;
+    color: green;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    cursor: pointer;
+}
+
+#arrowTop::before {
+    content: '🔺';
+}
+
+.btn{
+    padding: 15px 20px;
+    display: inline-block;
+    background-color: rgb(255, 234, 45);
+    border: 2px solid rgb(202, 154, 20);
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(202, 154, 20);
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: rgb(255, 222, 34);
+}
+
+.container{
+    max-width: 800px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slider{
+    border: 2px solid black;
+    width: 256px;
+    height: 256px;
+    overflow: hidden;
+}
+
+.sliderLine{
+    width: 1024px;
+    height: 256px;
+    display: flex;
+    background-color: rgb(255, 230, 0);
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}

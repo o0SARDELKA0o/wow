@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Плавный скролл CSS | JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="moveup">
+    <!-- .page$*3.page -->
+    <div class="page1 page" id="page1">
+        <a href="#page2" class="btn">
+            Страница 2
+        </a>
+        <a href="#page3" class="btn">
+            Страница 3
+        </a>
+        <div class="container">
+            <div class="slider">
+                <div class="sliderLine">
+                    <img src="images/elephant.png" alt="">
+                    <img src="images/gorilla.png" alt="">
+                    <img src="images/home.png" alt="">
+                    <img src="images/ice_cream.png" alt="">
+                </div>
+                
+            </div>
+            
+            <div class="navSlider">
+                <button class="sliderPrev btn">Prev</button>
+                <button class="sliderNext btn">Next</button>
+            </div>
+        </div>
+    </div>
+    <div class="page2 page" id="page2">
+        <a href="#page1" class="btn">
+            Страница 1
+        </a>
+        <a href="#page3" class="btn">
+            Страница 3
+        </a>
+	читай тут - https://schoolsw3.com/howto/howto_css_smooth_scroll.php
+    </div>
+    <div class="page3 page" id="page3">
+        <a href="#page2" class="btn">
+            Страница 2
+        </a>
+        <a href="#page1" class="btn">
+            Страница 1
+        </a>
+        <a href="#moveup" class="btn">
+            Наверх
+        </a>
+    </div>
+    <div id="arrowTop"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
